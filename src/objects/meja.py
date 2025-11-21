@@ -1,3 +1,6 @@
 class Meja:
-    def __init__(self,lebar=800,tinggi=400): self.lebar=lebar; self.tinggi=tinggi
-    def cek_di_batas(self,x,y): pass
+    """Representasi meja. Saat ini hanya placeholder."""
+
+    def __init__(self, width=1000, height=500):
+        self.width = width
+        self.height = height

@@ -1,12 +1,8 @@
 class ObjekGame:
-    """Kelas dasar untuk semua objek pada meja (posisi + ukuran dasar)."""
-    def __init__(self, x: float = 0.0, y: float = 0.0, jari_jari: float = 0.0):
-        self.x: float = x
-        self.y: float = y
-        self.jari_jari: float = jari_jari
+    """Base class that other in-game objects can inherit from."""
 
-    def perbarui(self, dt: float) -> None:
-        pass
+    def update(self, dt):
+        raise NotImplementedError
 
-    def gambar(self, layar) -> None:
-        pass
+    def draw(self, surface):
+        raise NotImplementedError

@@ -1,14 +1,6 @@
-from typing import List, Dict, Optional
-class PengelolaSkor:
+class Score:
     def __init__(self):
-        self.skor: Dict[int, int] = {}  # key = id pemain, value = poin
+        self.points = 0
 
-    def tambah_skor(self, pemain_id: int, poin: int) -> None:
-        pass
-
-    def reset(self) -> None:
-        pass
-
-    def giliran_berikut(self) -> int:
-        """Kembalikan id pemain berikutnya (atau logika pergantian giliran)."""
-        pass
+    def add(self, amount=1):
+        self.points += amount
